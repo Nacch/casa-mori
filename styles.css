@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #1d1d1f;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido principal */
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 1rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+header:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.header-title {
+    transition: color 0.3s ease-in-out;
+}
+
+header:hover .header-title {
+    color: #f8f9fa;
+}
+
+.header-icon {
+    width: 50px;
+    height: auto;
+}
+
+/* Description */
+.lead {
+    font-size: 1.1rem;
+    color: #6e6e73;
+    margin: 1rem auto;
+    max-width: 700px;
+}
+
+/* Section Divider */
+.section-divider {
+    width: 20%;
+    margin: 2rem auto;
+    border: none;
+    border-top: 3px solid #a1a1a1;
+}
+
+/* Mapa de Cuartos */
+.building {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.floor-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+.floor {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.btn.room {
+    background-color: #ffffff;
+    color: #1d1d1f;
+    font-weight: 600;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn.room:hover:not(:disabled) {
+    background-color: #28a745;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn.room:disabled {
+    background-color: #f8f8f8;
+    color: #a1a1a1;
+    border: 1px solid #e0e0e0;
+    cursor: not-allowed;
+}
+
+/* FAQ */
+.accordion {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.accordion-body {
+    text-align: justify;
+    color: #333333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Map */
+iframe {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #6e6e73;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer p {
+    margin: 0.2rem 0;
+}
+
+.footer .aika-message {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6a11cb;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos del Modal (Usando Bootstrap predeterminado) */
+.modal-dialog {
+    max-width: 600px;
+    margin: auto;
+}
+
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-img {
+    border-radius: 8px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+}
